@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Palm_Tree.ma
-//Last modified: Mon, Jan 26, 2026 09:50:53 PM
+//Last modified: Mon, Jan 26, 2026 09:51:44 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "5E425192-486E-F9EE-D82B-429565C6589A";
+fileInfo "UUID" "9059E1A1-4B55-2A71-A3E2-118DB75ED0F4";
 createNode transform -s -n "persp";
 	rename -uid "7FF8993C-40AF-6BF0-7794-6A84F1B2C430";
 	setAttr ".v" no;
@@ -21352,20 +21352,20 @@ createNode mesh -n "Palm_TreeShape" -p "Palm_Tree";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "601C9298-4F07-BCB4-7831-D28750BB3E77";
+	rename -uid "28BEC45A-430E-5AEF-0FCB-32B31644D9CF";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "85E8972C-44DC-AF50-B80C-BEA2C77E093B";
+	rename -uid "1B0A6CE4-4A08-EA3A-0D83-EEB3EF6E7D2D";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "427A7B12-44BF-44CC-4D97-3594E428B61A";
+	rename -uid "D6982817-49BC-5D3B-265C-8B8B491D0375";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "3845B4B2-46A2-8227-836B-D5B83C73AEE0";
+	rename -uid "D16C201F-4136-B3E4-BBF1-DEAEF7B5B1D7";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "FA799694-4ED9-73EE-C304-B081D89BE189";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "48265A7E-4EAE-03C0-148D-31A2B66AE7E2";
+	rename -uid "6652939B-4D6A-0193-4779-73AAF4F983F5";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "2874BC04-4708-4CEA-4536-5E8E94CA8DBC";
 	setAttr ".g" yes;
@@ -21505,7 +21505,7 @@ createNode place2dTexture -n "place2dTexture3";
 	rename -uid "45796032-4AF8-F77E-A089-588665AB9371";
 createNode bump2d -n "bump2d1";
 	rename -uid "81B5694D-410A-4A85-D97F-3FBD3E0EA57B";
-	setAttr ".vc1" -type "float3" 0 4.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 9.9999997e-06 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode file -n "file4";
 	rename -uid "C4A3E4C0-4D0F-FE5D-3E05-B188EEC34766";
