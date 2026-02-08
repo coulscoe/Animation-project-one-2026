@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Fire_FX.ma
-//Last modified: Fri, Feb 06, 2026 02:17:53 PM
+//Last modified: Fri, Feb 06, 2026 02:20:17 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -12,12 +12,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "9487B285-4775-11FA-C4CC-23A895443F2F";
+fileInfo "UUID" "056A9408-4CF5-1C94-8D87-1FBD4F74FA28";
 createNode transform -s -n "persp";
 	rename -uid "B279DE51-4A37-3336-DAB7-C48C26C8A2C9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.7849548394213954 7.6961128690005385 23.308523454651933 ;
-	setAttr ".r" -type "double3" -16.538352729606828 6.6000000000018515 -2.0011084909432231e-16 ;
+	setAttr ".t" -type "double3" 5.0039638566453126 13.970938529883911 32.481814590933233 ;
+	setAttr ".r" -type "double3" -21.93835272961045 8.6000000000005148 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "D1B5F0A2-4503-02F9-2B3B-0C80423C47BE";
 	setAttr -k off ".v" no;
@@ -25,7 +25,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.0032808398950131233;
 	setAttr ".fcp" 328.08398950131232;
 	setAttr ".fd" 0.16404199475065617;
-	setAttr ".coi" 24.579622713043157;
+	setAttr ".coi" 35.522692688638287;
 	setAttr ".ow" 0.32808398950131235;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -107,16 +107,16 @@ createNode fluidShape -n "fluidShape2" -p "fluid1";
 	setAttr ".stf" 142;
 	setAttr ".bres" 40;
 	setAttr ".sqvx" yes;
-	setAttr ".rw" 49;
-	setAttr ".rh" 72;
-	setAttr ".rd" 46;
+	setAttr ".rw" 53;
+	setAttr ".rh" 80;
+	setAttr ".rd" 48;
 	setAttr ".dw" 10;
 	setAttr ".dh" 10;
 	setAttr ".dd" 10;
 	setAttr ".aure" yes;
-	setAttr ".dofx" -0.625;
-	setAttr ".dofy" 1.5;
-	setAttr ".dofz" -0.5;
+	setAttr ".dofx" -0.375;
+	setAttr ".dofy" 2.25;
+	setAttr ".dofz" -0.25;
 	setAttr ".bod" 5;
 	setAttr ".sql" 25;
 	setAttr ".sbst" 2;
@@ -332,8 +332,8 @@ select -ne :time1;
 	setAttr -av -cb on ".ihi" 0;
 	setAttr -av -k on ".nds";
 	setAttr -cb on ".bnm";
-	setAttr -k on ".o" 223;
-	setAttr -av -k on ".unw" 223;
+	setAttr -k on ".o" 236;
+	setAttr -av -k on ".unw" 236;
 	setAttr -av -k on ".etw";
 	setAttr -av -k on ".tps";
 	setAttr -av -k on ".tms";
